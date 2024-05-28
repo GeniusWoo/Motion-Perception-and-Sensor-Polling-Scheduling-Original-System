@@ -10,7 +10,7 @@ First, open the system file .project.
 
 And then bind the location of the model file of HAR-net, in the Configuration of "X-CUBE-AI" as follow:
 
-![](image\3.png)
+![](image/3.png)
 
 Click the icon of "Debug as" and "Run" with connecting a STM32 board.
 
@@ -18,7 +18,7 @@ Download and open the software "Tera Term 5", setting the Serial port to the spe
 
 Now you can see the output of the system if you have configured the settings properly as follow. 
 
-![](image\4.png)
+![](image/4.png)
 
 And the prediction will change if the board is in a different motion speed.
 
@@ -28,7 +28,7 @@ And the prediction will change if the board is in a different motion speed.
 
 The pins of the development board are set as follows. You can see and modify it in the [ProjectAI.ioc file](ProjectAI.ioc). 
 
-![](image\1.png)
+![](image/1.png)
 
 In our system, real-time is the prime consideration. We use a method of polling the jobs in the job list with an unpreemptive FCFS. We set a special interval for each job, and the job will be scheduled if its running time comes. Our job list of the six sensors and the HAR-Net is as below:
 
@@ -42,7 +42,7 @@ In our system, real-time is the prime consideration. We use a method of polling 
 
 The workflow of the scheduler is as the following figure shows:
 
-![](image\2.png)
+![](image/2.png)
 
 Since the HAR-Net has dependencies on the value from the sensor LSM6DSL, we put the scheduling of it after the schedule of reading LSM6DSL. 
 
