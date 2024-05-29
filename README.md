@@ -1,4 +1,4 @@
-# Motion Perception and Sensor Polling Scheduling System
+# Motion Perception and Sensor Polling Scheduling Original System
 
 [Har-net](https://ieeexplore.ieee.org/document/8931260) is a learning model for the Single-Stage Object Detection. in this system, we use Har-net for motion detection and perception in STM32. By the way, the polling of the sensor ODR by FCFS scheduling are deployed with a FCFS scheduling in real time.
 
